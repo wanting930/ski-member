@@ -1,3 +1,2 @@
 # ski-member  
-This is my member feature.  
-Utilize the Spring Boot framework technology.
+This is my member feature, implemented using the Spring Boot framework technology.
