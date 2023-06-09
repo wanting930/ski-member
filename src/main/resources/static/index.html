@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 引入bootstrap套件CSS -->
+    <link rel="stylesheet" href="/ski-member/css/bootstrap.css" />
+    <link rel="stylesheet" href="/ski-member/css/root.css" />
+    <link rel="stylesheet" href="/ski-member/css/frontend_public.css" />
+    <title>Let's go skiing</title>
+  </head>
+
+  <body>
+    <header class="header"></header>
+    <!-- 內容欄 -->
+    <div class="main_section position-relative d-flex justify-content-center mb-0">
+      <!-- 頁面內容置於此 -->
+      <div class="container-main container text-center fw-bold h-100">
+        <h1>這是首頁</h1>
+
+        <!-- 側邊工具列 -->
+        <div class="sidetool_group position-absolute btn-toolbar flex-column mb-3" role="toolbar" aria-label="Toolbar with button groups">
+          <!-- 聊天室 -->
+          <button type="button" class="sidetool_button btn btn-outline-black mb-1">
+            <img class="sidetool_icon" src="/ski-member/img/chat.png" alt="#" />
+          </button>
+          <!-- 客服 -->
+          <button type="button" class="sidetool_button btn btn-outline-black mb-1">
+            <img class="sidetool_icon" src="/ski-member/img/service.png" alt="#" />
+          </button>
+          <!-- 返回頂端 -->
+          <button type="button" id="return_top_button" class="sidetool_button btn btn-outline-black mb-1">
+            <img class="sidetool_icon" src="/ski-member/img/up_arrow.png" alt="#" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <footer class="footer"></footer>
+  </body>
+  <!-- 引入bootstrap套件JS -->
+  <script src="/ski-member/js/bootstrap.bundle.js"></script>
+  <script src="/ski-member/js/frontend_public.js"></script>
+  <!-- 引入公版JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="/ski-member/js/embed.js"></script>
+  <script>
+	window.onload = function() {
+		var script1 = document.createElement("script");
+		script1.src = "/ski-member/js/navbar.js";
+		document.head.appendChild(script1);
+	};
+  </script>
+</html>
